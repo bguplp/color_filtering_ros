@@ -1,0 +1,4 @@
+<launch>
+	<node name="ColorFilter" pkg="color_filtering" type="ColorFiltering.py" required="true"/>
+
+</launch>
