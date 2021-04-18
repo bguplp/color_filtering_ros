@@ -90,7 +90,7 @@ def callback(data):
 
 def main(args):
     rospy.init_node('ColorFilter', anonymous=True)
-    rospy.Subscriber("/usb_cam/image_raw", Image, callback)
+    rospy.Subscriber("/kinect2/qhd/image_color_rect", Image, callback)
     try:
         rospy.spin()
     except KeyboardInterrupt:
